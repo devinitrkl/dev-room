@@ -1,64 +1,85 @@
-
-body{
+body {
   font-family: Roboto, Helvetica, Arial, sans-serif;
-  background-color: #f0f7f7;
+  background-color: #e8a1db;
+  --mdb-body-color: #130047;
   padding-top: 52px !important;
 }
-.btn-primary , .bg-primary{
-  background: linear-gradient(45deg,black,blueviolet);
-}
-.btn-secondary , .bg-secondary{
-  background: linear-gradient(45deg,black,purple);
-}
-.btn-success , .bg-success{
-  background: linear-gradient(45deg,black,limegreen);
-}
-.btn-like{
-  background: linear-gradient(45deg,rgb(0, 0, 0),rgba(5, 170, 5, 0.575));
-}
-.btn-info , .bg-info{
-  background: linear-gradient(45deg,black,lightblue);
-}
-.btn-warning , .bg-warning{
-  background: linear-gradient(45deg,black,orange);
-}
-.bg-comment{
-  background: linear-gradient(45deg,white,rgb(124, 122, 5));
-}
-.btn-danger , .bg-danger{
-  background: linear-gradient(45deg,black,red);
-}
-.btn-light , .bg-light{
-  background: linear-gradient(45deg,darkgray,gray);
-}
-.btn-dark , .bg-dark{
-  background: linear-gradient(45deg,black,darkslategray);
+
+.btn-primary, .bg-primary {
+  background: linear-gradient(45deg, #383838, #4747ff);
 }
 
+.btn-secondary, .bg-secondary {
+  background: linear-gradient(45deg, #383838, #a75aff);
+}
 
-.landing-page{
-  background: white url("https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") no-repeat scroll center;
+.btn-success, .bg-success {
+  background: linear-gradient(45deg, #383838, #00bf00);
+}
+
+.btn-like {
+  background: linear-gradient(45deg, #000000, rgba(5, 170, 5, 0.575));
+}
+
+.btn-info, .bg-info {
+  background: linear-gradient(45deg, #383838, #80ccff);
+}
+
+.btn-warning, .bg-warning {
+  background: linear-gradient(45deg, #383838, #0d41b1);
+}
+
+.bg-comment {
+  background: linear-gradient(45deg, white, #2d3cad);
+}
+
+.btn-danger, .bg-danger {
+  background: linear-gradient(45deg, #383838, #ff0000);
+}
+
+.btn-light, .bg-light {
+  background: linear-gradient(45deg, #4d4d4d, #808080);
+}
+
+.btn-dark, .bg-dark {
+  background: linear-gradient(45deg, #383838, #2f4f4f);
+}
+
+.landing-page {
+  background: #f0f7f7 url("https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") no-repeat scroll center;
   background-size: cover;
   height: 100vh;
   color: #c8cfcf;
 }
-.wrapper{
-  background-color: rgba(0,0,0,0.7);
+
+.wrapper {
+  background-color: rgba(0, 0, 0, 0.7);
   height: 100%;
 }
 
-.btn-teal , .bg-teal{
-  background-color: #008080 !important;
+.btn-teal, .bg-teal {
+  background-color: #521e87 !important;
 }
-.text-teal{
-  color: #114444 !important;
+
+.btn {
+  color: rgb(174, 163, 237) !important;
 }
-.bg-light-grey{
-  background: linear-gradient(45deg,darkgrey,#add8e6) !important;
+.btn:hover {
+  color: #130047 !important;
 }
-.profile-img{
-  box-shadow: 0 0 10px black;
+
+.text-teal {
+  color: #8247b9 !important;
 }
-table{
+
+.bg-light-grey {
+  background: linear-gradient(45deg, #532ea8, #add8e6) !important;
+}
+
+.profile-img {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+table {
   box-shadow: 0 0 2px #114444;
 }

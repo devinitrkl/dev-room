@@ -453,11 +453,9 @@ router.get("/:profileId", async (request, response) => {
  */
 router.put("/follow", authenticate, async (request, response) => {
   try {
-    let { followed_person } = request.body;
-    console.log(request.user.id);
-    console.log(followed_person);
-    await Profile.findOneAndUpdate({user:request.user.id}, { $push: { follower: followed_person}});
-    await Profile.findOneAndUpdate({user:followed_person},{ $inc: { following:1}}) ;
+    let { followed } = request.body;
+    await Profile.findOneAndUpdate({user:request.user.id}, { $push: { follower: followed}});
+    await Profile.findOneAndUpdate({user:followed},{ $inc: { following:1}}) ;
     response.status(200).json({ msg: "Started Following" });
   } catch (error) {
     console.error(error);
@@ -474,9 +472,9 @@ router.put("/follow", authenticate, async (request, response) => {
  */
 router.put("/unfollow", authenticate, async (request, response) => {
   try {
-    let { unfollowed_person } = request.body;
-    await Profile.findOneAndUpdate({user:request.user.id}, { $pull: { follower: unfollowed_person}});
-    await Profile.findOneAndUpdate({user:unfollowed_person},{ $inc: { following: -1}});
+    let { unfollowed } = request.body;
+    await Profile.findOneAndUpdate({user:request.user.id}, { $pull: { follower: unfollowed}});
+    await Profile.findOneAndUpdate({user:unfollowed},{ $inc: { following: -1}});
     return response.status(200).json({ msg:"unfollowed user" });
   } catch (error) {
     console.error(error);

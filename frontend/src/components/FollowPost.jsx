@@ -4,7 +4,7 @@ import axios from "axios";
 import Swal from "sweetalert2";
 import Spinner from "./Spinner";
 
-const Friends = () => {
+const FollowPost = () => {
   let [localPost, setLocalPost] = useState({
     text: "",
     image: "",
@@ -249,4 +249,4 @@ const Friends = () => {
   );
 };
 
-export default Friends;
+export default FollowPost;

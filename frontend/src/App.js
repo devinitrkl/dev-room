@@ -13,7 +13,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AddExperience from './components/AddExperience';
 import PostList from './components/PostList';
 import PostDetails from './components/PostDetails';
-import  Friends  from './components/Friends';
+import  FollowPost  from './components/FollowPost';
 function App() {
   return (
     <>
@@ -39,7 +39,7 @@ function App() {
           <Route path="/profiles/add-experience" element={<AddExperience />} />
           <Route path="/posts/list" element={<PostList />} />
           <Route path="/posts/:postId" element={<PostDetails />} />
-          <Route path="/friends" element={<Friends />} />
+          <Route path="/followpost" element={<FollowPost />} />
         </Routes>
       </BrowserRouter>
     </>

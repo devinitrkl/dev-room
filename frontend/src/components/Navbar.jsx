@@ -57,8 +57,8 @@ let Navbar = () => {
       </li>
     
       <li className="nav-item">
-        <Link to="/friends" className="nav-link">
-        <i class="fa-solid fa-user-group"/> Friends
+        <Link to="/followpost" className="nav-link">
+        <i class="fa-solid fa-user-group"/> FollowPost
         </Link>
       </li>
 
